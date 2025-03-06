@@ -18,13 +18,21 @@ public class animação : MonoBehaviour
         {
             Debug.Log("Entrou no W");
             //mudar
-           
+
             animar.SetTrigger("Muda");
 
         }
         else if (Input.GetKeyDown(KeyCode.S))
         {
             animar.SetTrigger("Desmudar");
+        }
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
+            animar.SetTrigger("Mudarandar");
+        }
+        else if (Input.GetKeyDown(KeyCode.A))
+        {
+            animar.SetTrigger("Mudarandar");
         }
     }
 }
