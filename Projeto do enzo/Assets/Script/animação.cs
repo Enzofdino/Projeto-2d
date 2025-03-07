@@ -22,6 +22,7 @@ public class animação : MonoBehaviour
             animar.SetTrigger("Muda");
 
         }
+        
         else if (Input.GetKeyDown(KeyCode.S))
         {
             animar.SetTrigger("Desmudar");
@@ -33,6 +34,10 @@ public class animação : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.A))
         {
             animar.SetTrigger("Mudarandar");
+        }
+        else if (Input.GetKeyDown(KeyCode.None))
+        {
+            animar.SetTrigger("Muda");
         }
     }
 }
