@@ -14,7 +14,7 @@ public class animação : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             Debug.Log("Entrou no W");
             //mudar
@@ -22,22 +22,24 @@ public class animação : MonoBehaviour
             animar.SetTrigger("Muda");
 
         }
-        
-        else if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
-            animar.SetTrigger("Desmudar");
+            animar.SetTrigger("Parado");
         }
-        else if (Input.GetKeyDown(KeyCode.D))
+
+        if (Input.GetKey(KeyCode.D))
         {
-            animar.SetTrigger("Mudarandar");
+            animar.SetTrigger("Andar");
         }
-        else if (Input.GetKeyDown(KeyCode.A))
+         if (Input.GetKey(KeyCode.A))
         {
-            animar.SetTrigger("Mudarandar");
+            animar.SetTrigger("Andar");
         }
-        else if (Input.GetKeyDown(KeyCode.None))
+       else if (Input.GetKey(KeyCode.None))
         {
-            animar.SetTrigger("Muda");
+            animar.SetTrigger("Parado");
         }
+
+
     }
 }

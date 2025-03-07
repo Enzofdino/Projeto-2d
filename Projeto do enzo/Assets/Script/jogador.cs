@@ -6,7 +6,7 @@ public class jogador : MonoBehaviour
 {
     public Rigidbody2D player;
     public float velocity = 5f;
-    public bool pulo;
+    
 
     private void Start()
     {
@@ -19,15 +19,15 @@ public class jogador : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
-            transform.position += new Vector3(-1, 0, 0) * velocity * Time.deltaTime; // Move para a esquerda
+            transform.position += new Vector3(-1, 0, 0) * velocity * Time.deltaTime; 
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.position += new Vector3(1, 0, 0) * velocity * Time.deltaTime; // Move para a direita
+            transform.position += new Vector3(1, 0, 0) * velocity * Time.deltaTime; 
         }
         if (Input.GetKey(KeyCode.W))
         {
-            transform.position += new Vector3(0, 5, 0) * velocity * Time.deltaTime;
+            transform.position += new Vector3(0, 3, 0) * velocity * Time.deltaTime;
         }
         
     }
